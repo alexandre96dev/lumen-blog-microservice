@@ -28,7 +28,6 @@ The Lumen framework is open-sourced software licensed under the [MIT license](ht
 ## Tutorial para fazer funcionar a aplicação na sua máquina
 
 - criar banco de dados com o nome "lumenblog"
-- criar uma tabela no banco de dados com o nome "posts"
 - instalação do postman
 - instalação do flipbox
 
@@ -43,4 +42,4 @@ php -S localhost:8000 -t public
 composer require flipbox/lumen-generator
 
 ## comandos essenciais para configuração da tabela
-php artisan migrate
+php artisan migrate(utilize esse comando logo após criar o banco de dados)
