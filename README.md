@@ -22,3 +22,33 @@ If you discover a security vulnerability within Lumen, please send an e-mail to 
 ## License
 
 The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+Tutorial
+
+criar servidor myphpadmin lumenblog
+criar tabela   post
+instalação do postman
+instalação composer
+
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('sha384', 'composer-setup.php') === '756890a4488ce9024fc62c56153228907f1545c228516cbf63f885e036d37e9a59d27d63f46af1d4d07ee0f76181c7d3') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+
+
+Criando diretorio do  projeto
+composer create-project laravel/lumen lumenblog --prefer-dist 
+
+estartando servidor
+php -S localhost:8000 -t public
+
+instalação flipbox
+composer require flipbox/lumen-generator
+
+criar databe lumenblog
+
+novos models 
+php artisan make:controller  PosTController --resource
+php artisan make:model  PosT -m
