@@ -29,16 +29,8 @@ The Lumen framework is open-sourced software licensed under the [MIT license](ht
 
 - criar banco de dados com o nome "lumenblog"
 - criar uma tabela no banco de dados com o nome "posts"
-- instalação do composer
 - instalação do postman
 - instalação do flipbox
-
-## instalação composer
-
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-php -r "if (hash_file('sha384', 'composer-setup.php') === '756890a4488ce9024fc62c56153228907f1545c228516cbf63f885e036d37e9a59d27d63f46af1d4d07ee0f76181c7d3') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-php composer-setup.php
-php -r "unlink('composer-setup.php');"
 
 
 ## Criando diretorio do  projeto
