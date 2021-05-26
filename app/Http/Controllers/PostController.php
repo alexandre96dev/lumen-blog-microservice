@@ -36,8 +36,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        $post = $request->isMethod('put') ? Post::findOrFail
-        ($request->id): new Post;
+        $post = $request->isMethod('put') ? Post::findOrFail($request->id): new Post;
 
         $post->id = $request->input('id');
         $post->title = $request->input('title');
@@ -91,6 +90,9 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = Post::findOrFail($id);
+        if ($post->delete()) {
+            return response($post);
+        }
     }
 }
